@@ -1,0 +1,33 @@
+{
+  "name": "restful-widgets-spa",
+  "version": "1.0.0",
+  "description": "Provides web services for widgets-spa application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhpontes/restful-widgets-spa.git"
+  },
+  "author": "robson pontes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rhpontes/restful-widgets-spa/issues"
+  },
+  "homepage": "https://github.com/rhpontes/restful-widgets-spa#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.2",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "extend": "^3.0.0",
+    "fs": "0.0.1-security",
+    "i18n-nodejs": "^2.0.0",
+    "jsonschema": "^1.1.0",
+    "mongodb": "^2.2.11",
+    "q": "^1.4.1",
+    "restify": "^4.2.0",
+    "serve-static-restify": "^1.0.0"
+  }
+}

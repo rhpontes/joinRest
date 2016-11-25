@@ -1,0 +1,30 @@
+{
+    "p1": {
+        "en-US": "Error persistence",
+        "pt-BR": "Erro de Persistencia"
+    },
+    "b1": {
+        "en-US": "Error business",
+        "pt-BR": "Erro de Negócio"
+    },
+    "db1": {
+        "en-US": "The MongoDB connection pool has not been established.",
+        "pt-BR": "A conexão com o mongoDB não foi estabilizada."
+    },
+    "401": {
+        "en-US": "Unauthorized",
+        "pt-BR": "Acesso Negado"
+    },
+    "400": {
+        "en-US": "Bad Request",
+        "pt-BR": "Erro de Requisição"
+    },
+    "404": {
+        "en-US": "Not Found",
+        "pt-BR": "Não encontrado"
+    },
+    "500": {
+        "en-US": "Server Error",
+        "pt-BR": "Erro no Servidor"
+    }
+}

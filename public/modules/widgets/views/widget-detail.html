@@ -1,0 +1,47 @@
+<!-- Create/Edit -->
+<div class="row">
+
+    <!-- Widget listing -->
+    <div class="col-lg-12">
+        <div class="widget">                
+        <div class="widget-body">
+            <form name="widgetForm" ng-submit="submit()" novalidate>
+            <legend ng-bind="editing == true ? 'Edit Widget' : 'Create Widget'"></legend>
+            <div class="form-group" ng-class="{ 'has-error' : widgetForm.name.$invalid && !widgetForm.name.$pristine }">
+                <label for="name">Name:</label>
+                <input type="text" ng-model="widget.name" class="form-control" name="name" id="name" required>
+                <input type="text" ng-show="false" ng-model="widget.id" class="form-control" >
+                <p ng-show="widgetForm.name.$invalid && !widgetForm.name.$pristine" class="help-block">Name field is required.</p>                
+            </div>
+            <div class="form-group" >
+                <label for="price">Price:</label>
+                <input type="text" placeholder="0.00" ui-number-mask ng-model="widget.price"  
+                    class="form-control" name="value" id="price">                                            
+            </div>
+            <div class="form-group">
+                <label for="color">Color:</label>
+                <select id="color" class="form-control" required name="color" ng-model="widget.color" >
+                <option ng-value="red" >red</option>
+                <option ng-value="purple">purple</option>
+                <option ng-value="black">black</option>
+                <option ng-value="green">green</option>
+                <option ng-value="magenta">magenta</option>
+                <option ng-value="white">white</option>
+                <option ng-value="other">depends on the viewing angle</option>
+                </select>                      
+            </div>
+            <div class="checkbox">
+                <label><input ng-model="widget.melts" type="checkbox"> Melts</label>
+            </div>
+            <div class="form-group" >
+                <label for="invetory">Inventory:</label>
+                <input type="text" ng-model="widget.inventory" placeholder="#?" class="form-control" id="inventory">
+            </div>
+            <div style="text-align: right;">
+                <button type="submit" class="btn btn-default">Save</button>
+            </div>
+            </form>
+        </div><!-- End Widget body -->
+        </div><!-- End Widget -->
+    </div><!-- End Column -->
+</div><!-- End Row -->
